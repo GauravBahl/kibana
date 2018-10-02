@@ -17,20 +17,8 @@
  * under the License.
  */
 
-import React, { Fragment } from 'react';
-
-import { Header } from './components/header';
-import { List } from './components/list';
-
-export const IndexPatternList = ({
-  indexPatternCreationOptions,
-  defaultIndex,
-  indexPatterns
-}) => (
-  <Fragment>
-    <div className="indexPatternList__headerWrapper">
-      <Header indexPatternCreationOptions={indexPatternCreationOptions} />
-    </div>
-    <List indexPatterns={indexPatterns} defaultIndex={defaultIndex} />
-  </Fragment>
-);
+export { parseEsInterval } from './parse_es_interval';
+export {
+  ParseEsIntervalInvalidCalendarIntervalError,
+} from './parse_es_interval_invalid_calendar_interval_error';
+export { ParseEsIntervalInvalidFormatError } from './parse_es_interval_invalid_format_error';
